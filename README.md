@@ -1,1 +1,6 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22062637&assignment_repo_type=AssignmentRepo)
+
+Com base no exemplo pth_pool.c, implemente o modelo de comunicação entre threads Produtor/Consumidor usando uma fila intermediária controlada por variáveis de condição. Enquanto um grupo de 3 threads produzirá relógios vetoriais que serão colocados na fila, outro grupo de 3 threads consumirá esses relógios da fila e os imprimirá na saída padrão. Para verificar o uso correto das variáveis de condição na sua tarefa de sincronização entre produtores e consumidores, crie dois cenários de teste:
+Cenário onde a fila ficará cheia: Threads produtoras produzem relógios na fila em uma taxa maior que as threads consumidoras. Por exemplo, em quanto cada thread produtora produz 1 relógio na fila a cada segundo, cada thread consome 1 relógio da fila a cada dois segundos. 
+Cenário onde a fila ficará vazia: Threads produtoras produzem relógios na fila em uma taxa menor que as threads consumidoras. Por exemplo, em quanto cada thread produtora produz 1 relógio na fila a cada 2 segundos, cada thread consome 1 relógio da fila a cada 1 segundo. 
+
